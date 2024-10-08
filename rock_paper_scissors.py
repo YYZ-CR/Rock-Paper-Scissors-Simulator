@@ -177,7 +177,7 @@ def main():
                         objects = clear_objects()  # Clear all objects
                     elif pause_button.is_clicked(mouse_pos):
                         paused = not paused  # Toggle pause
-                        pause_button.text = "▶" if paused else "||"
+                        pause_button.text = "|>" if paused else "||"
                     elif slower_button.is_clicked(mouse_pos):
                         speed = max(1, speed - 1)  # Decrease speed
                     elif faster_button.is_clicked(mouse_pos):
