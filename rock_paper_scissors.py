@@ -212,6 +212,8 @@ def main():
                 counts[obj.type] += 1
             count_text = small_font.render(f"Rocks: {counts['rock']}  Papers: {counts['paper']}  Scissors: {counts['scissors']}", True, WHITE)
             screen.blit(count_text, (20, 20))
+            space_text = small_font.render("Press 'Space' to toggle UI", True, WHITE)
+            screen.blit(space_text, (580, 550))
 
             # Draw buttons and speed controls
             rock_button.draw()
